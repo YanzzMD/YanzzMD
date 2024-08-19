@@ -18,13 +18,13 @@ jobs:
         with:
           node-version: '14'
 
-      - name: Install dependencies
-        run: |
-          npm install
-
       - name: Install additional packages
         run: |
           npm install whatsapp-web.js qrcode-terminal axios dotenv express ngrok pm2 pm2-log
+
+      - name: Install dependencies
+        run: |
+          npm install
 
       - name: Configure Ngrok
         run: |
