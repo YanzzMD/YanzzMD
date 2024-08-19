@@ -20,11 +20,11 @@ jobs:
 
       - name: Install additional packages
         run: |
-          npm install ngrok pm2 pm2-log
-
+          npm install
+          
       - name: Install dependencies
         run: |
-          npm install
+          npm install ngrok pm2 pm2-log
 
       - name: Configure Ngrok
         run: |
